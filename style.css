@@ -1,0 +1,72 @@
+text {
+  stroke:indigo;
+  stroke-width:1.5;
+  fill:lavender;
+  text-decoration:underline;
+}
+h1 {
+  font-size: 400%;
+}
+h1, h2, h3 {
+	font-size: 72px;
+  text-align: center;
+	font-weight: 900;
+	color: #000;
+  font-family: 'Futura', sans serif;
+}
+
+/*-----ANIMATIONS START-----*/
+
+/*TEXT ANIMATION 1*/
+@keyframes delay {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+h1 {
+ animation-name: delay;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+/*set an animation-delay of 2s*/
+
+/*TEXT ANIMATION 2*/
+@keyframes color {
+    0%   {color: lightblue;}
+    25%  {color: mistyrose;}
+    50%  {color: khaki;}
+    100% {color: black;}
+}
+
+h2 {
+    animation-name: color;
+  animation-duration: 5s;
+  text-align: left;
+}
+
+/*change the colors*/
+/*change the animation-duration to 5s*/
+/*change the animation-iteration-count*/
+
+/*TEXT ANIMATION 3*/
+
+@keyframes bounceIn {
+  0% {transform: scale(0.1);
+    opacity: 0;}
+  60% {transform: scale(1.2);
+    opacity: 1;}
+  100% {transform: scale(1);}
+}
+
+h3 {
+  animation-name: bounceIn;
+  animation-duration: 3s;
+}
+body {
+  padding-left: 40px;
+}
+
+
+/*set an animation duration of 3s*/
+/*set an animation-delay of 2s*/
